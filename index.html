@@ -38,7 +38,7 @@
         <span class="empresa-ano">2045</span>
         <h3 class="empresa-titulo">Bikcraft</h3>
         <span class="empresa-titulo">Desenvolvedor Júnior</span>
-        <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site.</p>
+        <p class="empresa-texto">Com o projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site.</p>
         <ul class="empresa-habilidades">
           <li>HTML</li>
           <li>CSS</li>
@@ -79,8 +79,8 @@
           <div class="idiomas">
             <h3>Idiomas</h3>
             <ul>
-              <li>Inglês <span>/ Intermediario</span></li>
               <li>Português <span>/ Nativo</span></li>
+              <li>Inglês <span>/ Intermediario</span></li>
             </ul>
           </div>
         </div>
@@ -95,12 +95,25 @@
         <li>raphaelpnunes@protonmail.com</li>
         <li>+55 13 997450159</li>
         <li><a href="https://www.linkedin.com/in/raphaelnunes-ti">Linkedin</a></li>
-        <li><a href="https://mega.nz/file/NH1H0bIS#4z22ID_RlEDfaFVjGRxxSdQQ_x28hQYe3LVsn3vmFfQ">Curriculum</a></li>
+        <li><a href="https://mega.nz/file/NH1H0bIS#4z22ID_RlEDfaFVjGRxxSdQQ_x28hQYe3LVsn3vmFfQ">Ver Curriculum</a></li>
       </ul>
       <p class="footer-copy">Raphael. Alguns direitos reservados.</p>
     </div>
   </footer>
+  <div class="toTop" onclick="scrollToTop()">
+  </div>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
+    window.onscroll = scroll1;
+
+    function scroll1() {
+      var toTop = document.querySelector('.toTop');
+      window.scrollY > 0 ? toTop.style.display = 'Flex' : toTop.style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
